@@ -12,7 +12,7 @@
 			display: none;
 			height: calc(1rem + 40px);
 		}
-		:host([has-items]) {
+		:host([has-items]), :host-context([loading]) {
 			display: block;
 		}
 		:host([justify-content]) .d2l-navigation-main-wrapper {
@@ -31,7 +31,7 @@
 			flex-wrap: nowrap;
 		}
 		@media(max-width: 992px) {
-			:host, :host([has-items]) {
+			:host, :host([has-items]), :host-context([loading]) {
 				display: none;
 			}
 		}

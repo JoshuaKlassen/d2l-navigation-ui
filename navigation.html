@@ -8,7 +8,6 @@
 <dom-module id="d2l-navigation">
 	<style>
 		:host {
-			border-bottom: 4px solid #f4f5f6;
 			display: block;
 			min-width: 320px;
 			position: relative;
@@ -22,7 +21,16 @@
 		:host([loading]) d2l-navigation-resolved {
 			opacity: 0;
 		}
-		.d2l-nav-shadow {
+		.d2l-nav-shadow-drop-border {
+			background-color: rgba(0,0,0,0.02);
+			bottom: -4px;
+			height: 4px;
+			pointer-events: none;
+			position: absolute;
+			width: 100%;
+			z-index: 100;
+		}
+		.d2l-nav-shadow-gradient {
 			background: -moz-linear-gradient(top,  rgba(249,250,251,1) 0%, rgba(249,250,251,0) 100%);
 			background: -webkit-linear-gradient(top,  rgba(249,250,251,1) 0%,rgba(249,250,251,0) 100%);
 			background: linear-gradient(to bottom,  rgba(249,250,251,1) 0%,rgba(249,250,251,0) 100%);
@@ -65,7 +73,8 @@
 			org-unit-name="[[orgUnitName]]"
 			user-href="[[userHref]]"
 			personal-menu-location="[[personalMenuLocation]]"></d2l-navigation-resolved>
-		<div class="d2l-nav-shadow"></div>
+		<div class="d2l-nav-shadow-drop-border"></div>
+		<div class="d2l-nav-shadow-gradient"></div>
 	</template>
 </dom-module>
 <script>

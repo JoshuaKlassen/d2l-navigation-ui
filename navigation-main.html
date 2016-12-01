@@ -82,15 +82,15 @@
 			window.removeEventListener('resize', this._onResize, true);
 		},
 		_chomp: function() {
+			if (!this._navItems || !this._navItems.length) {
+				this._hideMainGroup();
+				return;
+			}
+
 			var navItems = this._navItems,
 				navItemsLength = this._navItems.length;
 
 			Polymer.dom(this).node.removeAttribute('justify-content');
-
-			if (!navItemsLength) {
-				this._hideMainGroup();
-				return;
-			}
 
 			this._showAllItems();
 			var lastNavItem = navItems[navItemsLength - 1];

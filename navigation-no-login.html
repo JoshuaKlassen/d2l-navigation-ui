@@ -55,7 +55,7 @@
 			logo: String,
 			logoText: String
 		},
-		ready: function() {
+		attached: function() {
 			this.$$('d2l-page-load-progress').finish();
 			this.fire('d2l-navigation-ready');
 		}

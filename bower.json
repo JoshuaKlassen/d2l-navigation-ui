@@ -24,7 +24,7 @@
     "d2l-menu": "^0.2.8",
     "d2l-offscreen": "^2.2.2",
     "d2l-page-load-progress": "^1.2.2",
-    "d2l-performance": "^0.0.3",
+    "d2l-performance": "^0.0.4",
     "d2l-polymer-behaviors": "^0.0.4",
     "polymer": "^1.7.0",
     "iron-icon": "PolymerElements/iron-icon#^1.0.0",

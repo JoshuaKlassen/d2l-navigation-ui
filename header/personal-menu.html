@@ -83,7 +83,6 @@
 		</d2l-dropdown>
 		<d2l-ajax
 			auto
-			url="[[userHref]]"
 			on-iron-ajax-error="_onError"
 			on-iron-ajax-response="_onResponse"></d2l-ajax>
 	</template>
@@ -99,6 +98,9 @@
 			displayName: String
 		},
 		behaviors: [window.D2L.PolymerBehaviors.Navigation.GraftDropdownBehavior],
+		ready: function() {
+			this.$$('d2l-ajax').url = this.userHref;
+		},
 		_getThumbnail: function() {
 			return this.$$('.d2l-navigation-personal-menu-thumbnail');
 		},

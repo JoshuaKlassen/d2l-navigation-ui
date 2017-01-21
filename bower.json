@@ -29,7 +29,7 @@
     "polymer": "^1.7.0",
     "iron-icon": "PolymerElements/iron-icon#^1.0.0",
     "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.0",
-    "app-localize-behavior": "https://github.com/Brightspace/app-localize-behavior.git#master"
+    "app-localize-behavior": "PolymerElements/app-localize-behavior#~0.10.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
